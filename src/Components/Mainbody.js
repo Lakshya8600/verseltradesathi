@@ -9,7 +9,7 @@ export default function Mainbody() {
   const [rsi70, setrsi70] = useState([]);
 
   setInterval(() => {
-    let za = fetch("http://kumrawatyogesh.pythonanywhere.com/getsuddenpt7")
+    let za = fetch("https://kumrawatyogesh.pythonanywhere.com/getsuddenpt7")
     za.then(res =>
       res.json()).then(d => {
         if (d === "") { d = "#No Stock Found" }
@@ -18,7 +18,7 @@ export default function Mainbody() {
         varia.sort()
         setpt7(varia)
       })
-    let zb = fetch("http://kumrawatyogesh.pythonanywhere.com/getsudden2per")
+    let zb = fetch("https://kumrawatyogesh.pythonanywhere.com/getsudden2per")
     zb.then(res =>
       res.json()).then(d => {
         if (d === "") { d = "#No Stock Found" }
@@ -27,7 +27,7 @@ export default function Mainbody() {
         varia.sort()
         setper2(varia)
       })
-    let zc = fetch("http://kumrawatyogesh.pythonanywhere.com/getvwap")
+    let zc = fetch("https://kumrawatyogesh.pythonanywhere.com/getvwap")
     zc.then(res =>
       res.json()).then(d => {
         if (d === "") { d = "#No Stock Found" }
@@ -36,7 +36,7 @@ export default function Mainbody() {
         varia.sort()
         setvwap(varia)
       })
-    let zd = fetch("http://kumrawatyogesh.pythonanywhere.com/getrsi30")
+    let zd = fetch("https://kumrawatyogesh.pythonanywhere.com/getrsi30")
     zd.then(res =>
       res.json()).then(d => {
         if (d === "") { d = "#No Stock Found" }
@@ -45,7 +45,7 @@ export default function Mainbody() {
         varia.sort()
         setrsi30(varia)
       })
-    let ze = fetch("http://kumrawatyogesh.pythonanywhere.com/getrsi70")
+    let ze = fetch("https://kumrawatyogesh.pythonanywhere.com/getrsi70")
     ze.then(res =>
       res.json()).then(d => {
         if (d === "") { d = "#No Stock Found" }
@@ -57,7 +57,7 @@ export default function Mainbody() {
   }, 60000);
 
   {
-    let za = fetch("http://kumrawatyogesh.pythonanywhere.com/getsuddenpt7")
+    let za = fetch("https://kumrawatyogesh.pythonanywhere.com/getsuddenpt7")
     za.then(res =>
       res.json()).then(d => {
         if (d === "") { d = "#No Stock Found" }
@@ -66,7 +66,7 @@ export default function Mainbody() {
         varia.sort()
         setpt7(varia)
       })
-    let zb = fetch("http://kumrawatyogesh.pythonanywhere.com/getsudden2per")
+    let zb = fetch("https://kumrawatyogesh.pythonanywhere.com/getsudden2per")
     zb.then(res =>
       res.json()).then(d => {
         if (d === "") { d = "#No Stock Found" }
@@ -75,7 +75,7 @@ export default function Mainbody() {
         varia.sort()
         setper2(varia)
       })
-    let zc = fetch("http://kumrawatyogesh.pythonanywhere.com/getvwap")
+    let zc = fetch("https://kumrawatyogesh.pythonanywhere.com/getvwap")
     zc.then(res =>
       res.json()).then(d => {
         if (d === "") { d = "#No Stock Found" }
@@ -84,7 +84,7 @@ export default function Mainbody() {
         varia.sort()
         setvwap(varia)
       })
-    let zd = fetch("http://kumrawatyogesh.pythonanywhere.com/getrsi30")
+    let zd = fetch("https://kumrawatyogesh.pythonanywhere.com/getrsi30")
     zd.then(res =>
       res.json()).then(d => {
         if (d === "") { d = "#No Stock Found" }
@@ -93,7 +93,7 @@ export default function Mainbody() {
         varia.sort()
         setrsi30(varia)
       })
-    let ze = fetch("http://kumrawatyogesh.pythonanywhere.com/getrsi70")
+    let ze = fetch("https://kumrawatyogesh.pythonanywhere.com/getrsi70")
     ze.then(res =>
       res.json()).then(d => {
         if (d === "") { d = "#No Stock Found" }
