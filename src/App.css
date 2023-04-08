@@ -1,0 +1,162 @@
+/* Testimonials  */
+
+
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+.listcontainer {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.list-group{
+  border: 2px;
+  height: 500px;
+  background-color: rgb(255, 255, 255);
+  margin: 10px 10px 10px 10px;
+  font-size: large;
+  overflow-y: scroll;
+  /* border-radius: 10px; */
+  border-width: 15px;
+  width: 620px;
+  font-family: 'Lato', sans-serif;  
+  box-shadow: 10px 10px 10px 3px rgb(94, 73, 117);
+}
+
+.resultList :hover{
+  z-index:2; /* Put on top of others */
+
+  box-shadow: 5px 5px 10px 3px rgb(217, 185, 255);
+  -webkit-transform:scale(1.05);
+   -moz-transform:scale(1.05);
+   -o-transform:scale(1.05);
+   transform:scale(1.05);
+}
+
+.list-group li{
+  width: 620px;
+  font-weight: 400;
+  /* border-radius: 50px; */
+  /* border-color:#0051ff */
+}
+
+.list-group li :hover{
+  width: 620px;
+  font-weight: 400;
+}
+
+.list-group span{
+  
+  align-self: center;
+  font-size: 30px;
+  font-weight: 600;
+  background: -webkit-linear-gradient(rgb(206, 0, 137), rgb(3, 0, 182));
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+body{
+  /* background-image: url("https://img.freepik.com/free-vector/gradient-dynamic-blue-lines-background_23-2148995756.jpg?w=740&t=st=1680508624~exp=1680509224~hmac=73e3c658aa25632538c57480d20b1bfa93edd39847dc091ff22d3174c429d8ee"); */
+  /* background-image: linear-gradient(90deg , #fcf0ff70 , rgba(232, 255, 169, 0.705)); */
+  background-color: whitesmoke;
+}
+
+.container-fluid{
+  padding: 0px 0px 0px 0px ;
+}
+
+.card {
+  border-radius: .7rem;
+}
+
+
+
+
+/* Ffront Page  */
+
+.frontpage{
+  margin: 15px 15px 15px 15px;
+  height: 350px;
+  border: 2px solid rgba(159, 159, 255, 0.753);
+}
+
+.frontpage img{
+  position: absolute;
+  right: 20px;
+  top: 80px;
+  height: 310px;
+}
+
+.frontpage div{
+  position: absolute;
+  left: 60px;
+  top: 120px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.foooter{
+  background-color: whitesmoke;
+}
+
+/* Testimonial  */
+
+
+.ahah{
+  max-height: 30vh;
+}
