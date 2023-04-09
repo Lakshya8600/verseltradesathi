@@ -136,7 +136,7 @@ export default function Mainbody() {
             <img src="https://iili.io/HkWMtne.md.jpg" class="d-block mx-lg-auto img-fluid" alt="Bootstrap Themes" width="600" height="500" loading="lazy" />
           </div>
           <div class="col-lg-6">
-            <h1 class="display-5 fw-bold lh-1 mb-3">Find Stocks At Right Time</h1>
+            <h1 class="display-5 fw-bold lh-1 mb-3">Find 100+ Stocks At Right Time</h1>
             <p class="lead">Trade sathi helps you find intraday stocks at the Right Time, You can quickly find stocks having specific technical indication like they are near vwap , etc. Explore the website to know more. </p>
             <div class="d-grid gap-2 d-md-flex justify-content-md-start">
               <button type="button" class="btn btn-primary btn-lg px-4 me-md-2"><a href="#listcontainer" style={{ color: "white" }}>Scanners</a></button>
@@ -151,7 +151,7 @@ export default function Mainbody() {
       <div className="listcontainer" id='listcontainer'>
         <div className="resultList">
           <ul className="list-group">
-            <span>Sudden Change</span>
+            <span>Stocks making Sudden Change of 0.7% </span>
             {pt7.map((artist) => (
               <li className="list-group-item">{artist}</li>
             ))}
@@ -159,7 +159,7 @@ export default function Mainbody() {
         </div>
         <div className="resultList">
           <ul className="list-group">
-            <span>Sudden Change</span>
+            <span>Stocks making Sudden Change of 2% </span>
             {per2.map((artist) => (
               <li className="list-group-item">{artist}</li>
             ))}
@@ -167,7 +167,7 @@ export default function Mainbody() {
         </div>
         <div className="resultList">
           <ul className="list-group">
-            <span>Sudden Change</span>
+            <span>Near VWAP</span>
             {vwap.map((artist) => (
               <li className="list-group-item">{artist}</li>
             ))}
@@ -175,7 +175,7 @@ export default function Mainbody() {
         </div>
         <div className="resultList">
           <ul className="list-group">
-            <span>Sudden Change</span>
+            <span>Very low RSI</span>
             {rsi30.map((artist) => (
               <li className="list-group-item">{artist}</li>
             ))}
@@ -183,7 +183,7 @@ export default function Mainbody() {
         </div>
         <div className="resultList">
           <ul className="list-group">
-            <span>VWAP</span>
+            <span>Very High RSI</span>
             {rsi70.map((artist) => (
               <li className="list-group-item">{artist}</li>
             ))}
