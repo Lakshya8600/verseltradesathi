@@ -106,7 +106,7 @@ export default function Mainbody() {
 
   return (
     <div className="container-fluid">
-      <nav className="navbar navbar-expand-lg navbar-light bg-light">
+      <nav className="navbar navbar-expand-lg navbar-light bg-light container">
         <a className="navbar-brand" href="#home">TradeSathi</a>
         <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span className="navbar-toggler-icon"></span>
@@ -195,10 +195,10 @@ export default function Mainbody() {
       <div class="b-example-divider"></div> */}
 
       <div class="px-4 pt-5 my-5 text-center border-bottom" id='contact'>
-        <h1 class="display-4 fw-bold">Know For Creating Profits</h1>
+        <h1 class="display-4 fw-bold">Known For Creating Profits</h1>
         <div class="col-lg-6 mx-auto">
-          <p class="lead mb-4">Trusted by many people to provide reliable information and create profit opportunities for traders, We are completely an independent organisation solely made for traders accors India.</p>
-          <h3>Email - tradesathi@gmail.com</h3>
+          <p class="lead mb-4">Trusted by many people to provide reliable information and create profit opportunities for traders, We are completely an independent organisation solely made for traders accross India.</p>
+          <h3>Email - lakshyakumrawatbusiness@gmail.com</h3>
           {/* <div class="d-grid gap-2 d-sm-flex justify-content-sm-center mb-5">
             <button type="button" class="btn btn-primary btn-lg px-4 me-sm-3">Primary button</button>
             <button type="button" class="btn btn-outline-secondary btn-lg px-4">Secondary</button>
