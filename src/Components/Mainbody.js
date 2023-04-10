@@ -1,7 +1,12 @@
 import React from 'react'
 import { useState } from 'react';
+import ReactGA from 'react-ga4'
 
 export default function Mainbody() {
+  const TRACKING_ID = 'G-40T38022RG'
+  ReactGA.initialize(TRACKING_ID)
+  ReactGA.send({hitType:"pageview" , page:'/'})
+
   const [pt7, setpt7] = useState([]);
   const [per2, setper2] = useState([]);
   const [vwap, setvwap] = useState([]);
