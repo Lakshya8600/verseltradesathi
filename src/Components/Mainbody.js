@@ -13,10 +13,31 @@ export default function Mainbody() {
   const [rsi30, setrsi30] = useState([]);
   const [rsi70, setrsi70] = useState([]);
 
+  serverLink = "https://kumrawatyogesh.pythonanywhere.com"
+  server1 = "https://kumrawatyogesh.pythonanywhere.com"
+  server2 = "https://yogeshkumarawat.pythonanywhere.com"
+
+  var d = new Date(); 
+  console.log(d.getMinutes())
+
+  if (12 >= d.getHours >= 9) {
+    serverLink = server1
+  }
+  else{
+    serverLink = server2
+  }
+  console.log(serverLink)
+
   setInterval(() => {
-     var d = new Date(); 
-     console.log(d.getMinutes())
-    let za = fetch("https://kumrawatyogesh.pythonanywhere.com/getsuddenpt7")
+    d = new Date();
+    if (12 >= d.getHours >= 9) {
+      serverLink = server1
+    }
+    else{
+      serverLink = server2
+    }
+
+    let za = fetch(serverLink + "/getsuddenpt7")
     za.then(res =>
       res.json()).then(d => {
         if (d === "") { d = "#No Stock Found" }
@@ -25,7 +46,7 @@ export default function Mainbody() {
         varia.sort()
         setpt7(varia)
       })
-    let zb = fetch("https://kumrawatyogesh.pythonanywhere.com/getsudden2per")
+    let zb = fetch(serverLink + "/getsudden2per")
     zb.then(res =>
       res.json()).then(d => {
         if (d === "") { d = "#No Stock Found" }
@@ -34,7 +55,7 @@ export default function Mainbody() {
         varia.sort()
         setper2(varia)
       })
-    let zc = fetch("https://kumrawatyogesh.pythonanywhere.com/getvwap")
+    let zc = fetch(serverLink + "/getvwap")
     zc.then(res =>
       res.json()).then(d => {
         if (d === "") { d = "#No Stock Found" }
@@ -43,7 +64,7 @@ export default function Mainbody() {
         varia.sort()
         setvwap(varia)
       })
-    let zd = fetch("https://kumrawatyogesh.pythonanywhere.com/getrsi30")
+    let zd = fetch(serverLink + "/getrsi30")
     zd.then(res =>
       res.json()).then(d => {
         if (d === "") { d = "#No Stock Found" }
@@ -52,7 +73,7 @@ export default function Mainbody() {
         varia.sort()
         setrsi30(varia)
       })
-    let ze = fetch("https://kumrawatyogesh.pythonanywhere.com/getrsi70")
+    let ze = fetch(serverLink + "/getrsi70")
     ze.then(res =>
       res.json()).then(d => {
         if (d === "") { d = "#No Stock Found" }
@@ -64,7 +85,7 @@ export default function Mainbody() {
   }, 60000);
 
   {
-    let za = fetch("https://kumrawatyogesh.pythonanywhere.com/getsuddenpt7")
+    let za = fetch(serverLink + "/getsuddenpt7")
     za.then(res =>
       res.json()).then(d => {
         if (d === "") { d = "#No Stock Found" }
@@ -73,7 +94,7 @@ export default function Mainbody() {
         varia.sort()
         setpt7(varia)
       })
-    let zb = fetch("https://kumrawatyogesh.pythonanywhere.com/getsudden2per")
+    let zb = fetch(serverLink + "/getsudden2per")
     zb.then(res =>
       res.json()).then(d => {
         if (d === "") { d = "#No Stock Found" }
@@ -82,7 +103,7 @@ export default function Mainbody() {
         varia.sort()
         setper2(varia)
       })
-    let zc = fetch("https://kumrawatyogesh.pythonanywhere.com/getvwap")
+    let zc = fetch(serverLink + "/getvwap")
     zc.then(res =>
       res.json()).then(d => {
         if (d === "") { d = "#No Stock Found" }
@@ -91,7 +112,7 @@ export default function Mainbody() {
         varia.sort()
         setvwap(varia)
       })
-    let zd = fetch("https://kumrawatyogesh.pythonanywhere.com/getrsi30")
+    let zd = fetch(serverLink + "/getrsi30")
     zd.then(res =>
       res.json()).then(d => {
         if (d === "") { d = "#No Stock Found" }
@@ -100,7 +121,7 @@ export default function Mainbody() {
         varia.sort()
         setrsi30(varia)
       })
-    let ze = fetch("https://kumrawatyogesh.pythonanywhere.com/getrsi70")
+    let ze = fetch(serverLink + "/getrsi70")
     ze.then(res =>
       res.json()).then(d => {
         if (d === "") { d = "#No Stock Found" }
@@ -111,6 +132,7 @@ export default function Mainbody() {
       })
   }
 
+
   return (
     <div className="container-fluid">
       <nav className="navbar navbar-expand-lg navbar-light bg-light container">
@@ -118,7 +140,7 @@ export default function Mainbody() {
         <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span className="navbar-toggler-icon"></span>
         </button>
-
+    
         <div className="collapse navbar-collapse" id="navbarSupportedContent">
           <ul className="navbar-nav mr-auto">
             <li className="nav-item active">
