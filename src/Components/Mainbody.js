@@ -15,7 +15,7 @@ export default function Mainbody() {
 
   setInterval(() => {
      var d = new Date(); 
-     console.log(d.getHours())
+     console.log(d.getMinutes())
     let za = fetch("https://kumrawatyogesh.pythonanywhere.com/getsuddenpt7")
     za.then(res =>
       res.json()).then(d => {
