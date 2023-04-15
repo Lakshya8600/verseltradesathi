@@ -13,9 +13,9 @@ export default function Mainbody() {
   const [rsi30, setrsi30] = useState([]);
   const [rsi70, setrsi70] = useState([]);
 
-  serverLink = "https://kumrawatyogesh.pythonanywhere.com"
-  server1 = "https://kumrawatyogesh.pythonanywhere.com"
-  server2 = "https://yogeshkumarawat.pythonanywhere.com"
+  let serverLink = "https://kumrawatyogesh.pythonanywhere.com"
+  let server1 = "https://kumrawatyogesh.pythonanywhere.com"
+  let server2 = "https://yogeshkumarawat.pythonanywhere.com"
 
   var d = new Date(); 
   console.log(d.getMinutes())
