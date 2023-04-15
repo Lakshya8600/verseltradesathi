@@ -14,6 +14,8 @@ export default function Mainbody() {
   const [rsi70, setrsi70] = useState([]);
 
   setInterval(() => {
+     var d = new Date(); 
+     console.log(d.getHours())
     let za = fetch("https://kumrawatyogesh.pythonanywhere.com/getsuddenpt7")
     za.then(res =>
       res.json()).then(d => {
